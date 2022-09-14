@@ -64,7 +64,7 @@ public abstract class BaseSetup {
 
 	@AfterSuite
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }
