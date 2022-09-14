@@ -8,15 +8,20 @@ import org.openqa.selenium.support.PageFactory;
 import com.amazon.core.Utility;
 
 public class ProductListingPageFactory extends AbstractPageFactory {
-	public Utility utils;
 	/**
 	 * All WebElements are identified by @FindBy annotation
 	 */
 	@FindBy(xpath = "//span[normalize-space()='Brands']")
 	WebElement brands;
 	
-	@FindBy(xpath = "//*[@id=\"s-refinements\"]/div[21]/ul/li[5]/span/a/span")
+	@FindBy(xpath = "//span[@class='a-size-base a-color-base'][contains(.,'Samsung')]")
 	WebElement samsung;
+	
+	@FindBy(xpath = "//span[@class='a-dropdown-label']")
+	WebElement sortBy;
+	
+	@FindBy(xpath = "//a[contains(.,'Price: High to Low')]")
+	WebElement highToLow;
 	
 	public ProductListingPageFactory(WebDriver driver) {
 		// This initElements method will create all WebElements
@@ -26,10 +31,17 @@ public class ProductListingPageFactory extends AbstractPageFactory {
 	
 	public void filterSamsung()
 	{
-		utils = new Utility();
 		// Scroll down to Brands
-		utils.scrollDownToElement(brands, driver);
+		Utility.scrollDownToElement(brands, driver);
 		samsung.click();
+		Utility.waiting(driver);
+	}
+	
+	public void sortHighToLow()
+	{
+		sortBy.click();
+		highToLow.click();
+		
 	}
 
 }

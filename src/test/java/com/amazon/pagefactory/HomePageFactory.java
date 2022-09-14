@@ -7,8 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 import com.amazon.core.Utility;
 
 public class HomePageFactory extends AbstractPageFactory {
-	public Utility utils;
-
 	/**
 	 * All WebElements are identified by @FindBy annotation
 	 */
@@ -38,12 +36,11 @@ public class HomePageFactory extends AbstractPageFactory {
 	}
 
 	public void openTVDepartment() {
-		utils = new Utility();
 		// Scroll down to Shop By Department
-		utils.scrollDownToElement(shopByDepartment, driver);
+		Utility.scrollDownToElement(shopByDepartment, driver);
 		// Click on TV department
 		tvDepartment.click();
-		utils.waiting(driver);
+		Utility.waiting(driver);
 	}
 
 	public void openTelevisionCategory() {
