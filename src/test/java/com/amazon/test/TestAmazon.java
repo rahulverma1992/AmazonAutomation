@@ -33,15 +33,16 @@ public class TestAmazon extends BaseSetup {
 		// Scroll down to Shop by department and click on TV,Appliance and Electronics
 		objHomePage.openTVDepartment();
 		logger.createNode("Scroll down to Shop by department and click on TV,Appliance and Electronics");
-		//Click on Television Category
+		// Click on Television Category
 		objHomePage.openTelevisionCategory();
 		logger.createNode("Click on Television Category");
-		//Filter category for Samsung products
+		// Filter category for Samsung products
 		objProductListingPage.filterSamsung();
 		logger.createNode("Click on Samsung filter");
-		//Perform sorting High to Low
+		// Perform sorting High to Low
 		objProductListingPage.sortHighToLow();
 		logger.createNode("Perform sorting High to Low");
+		objProductListingPage.getSecondHighestProductPrice();
 	}
 
 }

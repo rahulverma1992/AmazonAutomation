@@ -8,6 +8,7 @@
       <class name="com.amazon.test.TestAmazon">
         <methods>
           <include name="setUp"/>
+          <include name="getResult"/>
           <include name="productAboutTest"/>
           <include name="tearDown"/>
           <include name="initializeTestBaseSetup"/>

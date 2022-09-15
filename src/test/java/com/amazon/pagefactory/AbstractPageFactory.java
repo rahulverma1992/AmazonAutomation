@@ -19,7 +19,5 @@ public class AbstractPageFactory {
 		return getPageTitle(driver).contains(expectedPageTitle);
 
 	}
-	
-	
 
 }
