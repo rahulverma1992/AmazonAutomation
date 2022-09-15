@@ -79,8 +79,6 @@ public abstract class BaseSetup {
 			System.out.println("Error....." + e.getMessage() + e);
 		}
 	}
-
-	// To capture screenshot
 	@AfterMethod
 	public void getResult(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
