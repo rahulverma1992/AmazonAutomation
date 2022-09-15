@@ -11,6 +11,7 @@ public class TestAmazon extends BaseSetup {
 	public WebDriver driver;
 	HomePageFactory objHomePage;
 	ProductListingPageFactory objProductListingPage;
+	ProductDetailsPageFactory objProductDetailsPage;
 
 	@BeforeSuite
 	public void setUp() {
@@ -21,6 +22,7 @@ public class TestAmazon extends BaseSetup {
 	public void productAboutTest() {
 		objHomePage = new HomePageFactory(driver);
 		objProductListingPage = new ProductListingPageFactory(driver);
+		objProductDetailsPage = new ProductDetailsPageFactory(driver);
 		logger = extent.createTest("To verify Amazon features");
 		// Verify Amazon home page is opened
 		objHomePage.verifyBasePageTitle(
@@ -43,6 +45,8 @@ public class TestAmazon extends BaseSetup {
 		objProductListingPage.sortHighToLow();
 		logger.createNode("Perform sorting High to Low");
 		objProductListingPage.getSecondHighestProductPrice();
+		logger.createNode("Open Product details and print about this item in console");
+		objProductDetailsPage.aboutThisItem();
 	}
 
 }

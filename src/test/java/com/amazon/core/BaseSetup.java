@@ -71,7 +71,8 @@ public abstract class BaseSetup {
 			setDriver(browserType, appURL);
 			// Create an object of Extent Report
 			extent = new ExtentReports();
-			spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/ExtentReport.html");
+			spark = new ExtentSparkReporter(
+					System.getProperty("user.dir") + "/test-output/Report/AmazonExtentReport.html");
 			extent.attachReporter(spark);
 			extent.setSystemInfo("User Name", "Rahul Verma");
 		} catch (Exception e) {

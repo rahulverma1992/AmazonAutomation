@@ -1,7 +1,6 @@
 package com.amazon.pagefactory;
 
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,7 +18,7 @@ public class ProductListingPageFactory extends AbstractPageFactory {
 	@FindBy(xpath = "//span[@class='a-size-base a-color-base'][contains(.,'Samsung')]")
 	WebElement samsung;
 
-	@FindBy(xpath = "//span[@class='a-dropdown-label']")
+	@FindBy(xpath = "//*[@id=\"a-autoid-0-announce\"]")
 	WebElement sortBy;
 
 	@FindBy(xpath = "//a[contains(.,'Price: High to Low')]")
@@ -35,10 +34,11 @@ public class ProductListingPageFactory extends AbstractPageFactory {
 	}
 
 	public void filterSamsung() {
+		Utility.fluentWait(brands, driver);
 		// Scroll down to Brands
 		Utility.scrollDownToElement(brands, driver);
+		Utility.fluentWait(samsung, driver);
 		samsung.click();
-		// Utility.waiting(driver);
 	}
 
 	public void sortHighToLow() {
@@ -50,8 +50,9 @@ public class ProductListingPageFactory extends AbstractPageFactory {
 
 	public void getSecondHighestProductPrice() {
 		Utility.waiting(driver);
+		String currentHandle = driver.getWindowHandle();
+		// Click the link which opens in a new window
 		getAllProductPrices.get(1).click();
-		Utility.waiting(driver);
-
+		Utility.windowHandle(currentHandle, driver);
 	}
 }

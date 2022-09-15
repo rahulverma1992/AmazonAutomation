@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-15T09:35:11 IST" name="TestingAmazon" finished-at="2022-09-15T09:35:39 IST" duration-ms="28801">
+  <suite started-at="2022-09-15T12:20:30 IST" name="TestingAmazon" finished-at="2022-09-15T12:20:43 IST" duration-ms="13112">
     <groups>
     </groups>
-    <test started-at="2022-09-15T09:35:11 IST" name="AmazonTest" finished-at="2022-09-15T09:35:39 IST" duration-ms="28801">
+    <test started-at="2022-09-15T12:20:30 IST" name="AmazonTest" finished-at="2022-09-15T12:20:43 IST" duration-ms="13112">
       <class name="com.amazon.test.TestAmazon">
-        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.test.TestAmazon@2eae8e6e]" started-at="2022-09-15T09:35:06 IST" name="initializeTestBaseSetup" finished-at="2022-09-15T09:35:11 IST" duration-ms="4258" status="PASS">
+        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.test.TestAmazon@4b741d6d]" started-at="2022-09-15T12:20:25 IST" name="initializeTestBaseSetup" finished-at="2022-09-15T12:20:30 IST" duration-ms="5055" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,26 +23,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.TestAmazon@2eae8e6e]" started-at="2022-09-15T09:35:11 IST" name="setUp" finished-at="2022-09-15T09:35:11 IST" depends-on-methods="com.amazon.core.BaseSetup.initializeTestBaseSetup" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.TestAmazon@4b741d6d]" started-at="2022-09-15T12:20:30 IST" name="setUp" finished-at="2022-09-15T12:20:30 IST" depends-on-methods="com.amazon.core.BaseSetup.initializeTestBaseSetup" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productAboutTest()[pri:0, instance:com.amazon.test.TestAmazon@2eae8e6e]" started-at="2022-09-15T09:35:11 IST" name="productAboutTest" finished-at="2022-09-15T09:35:39 IST" duration-ms="28764" status="PASS">
+        <test-method signature="productAboutTest()[pri:0, instance:com.amazon.test.TestAmazon@4b741d6d]" started-at="2022-09-15T12:20:30 IST" name="productAboutTest" finished-at="2022-09-15T12:20:43 IST" duration-ms="13077" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productAboutTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.amazon.test.TestAmazon@2eae8e6e]" started-at="2022-09-15T09:35:39 IST" name="getResult" finished-at="2022-09-15T09:35:39 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.amazon.test.TestAmazon@4b741d6d]" started-at="2022-09-15T12:20:43 IST" name="getResult" finished-at="2022-09-15T12:20:43 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=productAboutTest status=SUCCESS method=TestAmazon.productAboutTest()[pri:0, instance:com.amazon.test.TestAmazon@2eae8e6e] output={null}]]]>
+                <![CDATA[[TestResult name=productAboutTest status=SUCCESS method=TestAmazon.productAboutTest()[pri:0, instance:com.amazon.test.TestAmazon@4b741d6d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.TestAmazon@2eae8e6e]" started-at="2022-09-15T09:35:39 IST" name="tearDown" finished-at="2022-09-15T09:35:40 IST" duration-ms="439" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.TestAmazon@4b741d6d]" started-at="2022-09-15T12:20:43 IST" name="tearDown" finished-at="2022-09-15T12:20:44 IST" duration-ms="585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

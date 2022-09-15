@@ -32,18 +32,22 @@ public class HomePageFactory extends AbstractPageFactory {
 	}
 
 	public void openHamburgerMenu() {
+		Utility.fluentWait(hamburgerMenu, driver);
 		hamburgerMenu.click();
 	}
 
 	public void openTVDepartment() {
+		Utility.fluentWait(shopByDepartment, driver);
 		// Scroll down to Shop By Department
 		Utility.scrollDownToElement(shopByDepartment, driver);
+		Utility.fluentWait(tvDepartment, driver);
 		// Click on TV department
 		tvDepartment.click();
 		Utility.waiting(driver);
 	}
 
 	public void openTelevisionCategory() {
+		Utility.fluentWait(televisons, driver);
 		televisons.click();
 	}
 
